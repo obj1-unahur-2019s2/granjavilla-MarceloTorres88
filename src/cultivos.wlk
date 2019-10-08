@@ -1,16 +1,33 @@
 class Maiz {
 	var property position
-	var property esAdulta = false
+	var property esAdulta = false 
+	
 	method image() {
-		if(esAdulta){
+		if (esAdulta) {
 			return "corn_adult.png"
-		}
-		// TODO: hacer que devuelva la imagen que corresponde
-		return "corn_baby.png"
-	}
-	method regate(){
-		if(not esAdulta){
-			esAdulta=true
+		} else {
+			return "corn_baby.png"
 		}
 	}
+	
+	method regate() {
+		if (not esAdulta) { esAdulta = true }
+	}
+	
+}
+
+class Trigo {
+	var property position
+	
+	method image() { return "wheat_0.png" }
+	method regate() { /* a completar */ }
+	
+
+}
+class Tomaco {
+	var property position
+	
+	method image() { return "tomaco.png" }
+	method regate() { /* a completar */ }
+	
 }
