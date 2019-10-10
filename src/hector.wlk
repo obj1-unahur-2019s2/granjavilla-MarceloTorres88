@@ -31,4 +31,7 @@ object hector {
 	method cantidadDePlantasCosechadas() {
 		return plantasCosechadas.size()
 	}
+	method mover(direccion){
+		position=direccion.siguientePosicion(position)
+	}
 }
